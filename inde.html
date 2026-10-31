@@ -59,7 +59,7 @@
 <div class="splash" id="splash" aria-label="Loading Football Fanverse">
   <div class="splash-inner">
     <svg class="splash-crest" viewBox="0 0 100 115" role="img" aria-label="FF crest"><defs><linearGradient id="gold" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff0b0"/><stop offset=".5" stop-color="#d9b65d"/><stop offset="1" stop-color="#92702b"/></linearGradient></defs><path d="M50 3 92 18 86 70 50 109 14 70 8 18Z" fill="#171918" stroke="url(#gold)" stroke-width="3"/><path d="M50 13 81 24 76 65 50 93 24 65 19 24Z" fill="#d9b65d" opacity=".15" stroke="#d9b65d"/><text x="50" y="52" fill="#f4dfa0" font-size="27" font-weight="900" text-anchor="middle">FF</text><path d="M30 65h40" stroke="#d9b65d" stroke-width="2"/><text x="50" y="79" fill="#f4dfa0" font-size="6" font-weight="800" text-anchor="middle" letter-spacing="1">FANVERSE</text></svg>
-    <h1>FOOTBALL FANVERSE</h1><p>Your club. Your card. Your legacy.</p><div class="loader"></div>
+    <h1>DEV RBIAN FOOTBALL FANVERSE</h1><p>Your club. Your card. Your legacy.</p><div class="loader"></div>
   </div>
 </div>
 <header class="topbar"><div class="wrap nav">
@@ -90,7 +90,6 @@
         <div class="field"><label for="season">Season</label><select id="season"><option>2026/27</option><option>2025/26</option><option>2024/25</option><option>2023/24</option><option>Collector Edition</option></select></div>
         <div class="field"><label for="memberSince">Fan since</label><input id="memberSince" type="number" min="1900" max="2100" value="2024"></div>
         <div class="field"><label for="template">Card finish</label><select id="template"><option value="classic">Classic gold</option><option value="carbon">Carbon fibre</option><option value="neon">Neon nights</option><option value="royal">Royal velvet</option><option value="stadium">Stadium lights</option><option value="minimal">Minimalist</option><option value="legend">Legend edition</option><option value="holo">Holographic</option><option value="heritage">Heritage</option><option value="midnight">Midnight</option></select></div>
-        <div class="field full"><div class="notice">Team colours are applied automatically from the selected club or national team. Card finishes change the texture and effects, not the team identity.</div></div>
         <div class="field full"><label for="motto">Personal motto</label><input id="motto" maxlength="90" placeholder="Loyalty is forever."></div>
         <div class="field full"><label for="portraitUpload">Your profile photo <span style="color:#f4dfa0">* required</span></label><label class="photo-drop" id="photoDrop" for="portraitUpload"><span class="photo-icon"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 16V4m-4 4 4-4 4 4"/><path d="M4 15v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"/></svg></span><span class="photo-copy"><strong id="photoTitle">Upload your photo</strong><span id="photoHint">Tap to choose or drag an image here · JPG, PNG or WEBP · max 5 MB</span></span><img class="photo-preview" id="photoPreview" alt="Selected profile photo"><input id="portraitUpload" type="file" accept="image/png,image/jpeg,image/webp" required></label><div class="photo-actions"><button type="button" class="btn small" id="changePhotoBtn">Choose photo</button><button type="button" class="btn small ghost" id="removePhotoBtn" hidden>Remove photo</button></div><span class="tiny muted">Your photo is included in the card and remains in your browser unless you choose to sync the card.</span></div>
       </div>
@@ -102,7 +101,6 @@
       <div class="preview-top"><div><div class="eyebrow">Live preview</div><strong>Front & back</strong></div><div class="row"><button class="btn small" id="frontTab" aria-pressed="true">Front</button><button class="btn small" id="backTab" aria-pressed="false">Back</button></div></div>
       <div class="card-stage"><div id="cardFront" class="fan-card"></div><div id="cardBack" class="fan-card card-back"></div></div>
       <div class="row" style="margin-top:12px"><button class="btn small" id="flipBtn">Flip preview</button><span class="muted tiny">Landscape · 1.586:1 aspect ratio</span></div>
-      <div class="notice" style="margin-top:14px">Privacy first: new cards are private by default. Saving to the cloud requires an account and a configured Supabase project.</div>
     </div>
   </div>
 </section>
